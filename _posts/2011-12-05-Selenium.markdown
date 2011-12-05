@@ -1,0 +1,6 @@
+---
+layout: post
+title: Selenium
+description: Using Selenium with Railsonfire
+categories: setup
+---

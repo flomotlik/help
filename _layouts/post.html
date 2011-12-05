@@ -1,18 +1,42 @@
 ---
 layout: default
 ---
-{% assign post = page %}
-{% include post.html %}
+
+<div class="post" class="span-15 last">
+  <div class="post-header span-15 last">
+    <span class="share">
+      <a href="http://twitter.com/share" class="twitter-share-button" data-text="Railsonfire Blog - {{post.title}} -" data-url="http://blog.railsonfire.com{{post.url}}" data-count="horizontal" data-via="railsonfire">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </span>
+    <span class="share">
+      <iframe src="http://www.facebook.com/plugins/like.php?app_id=165675853500765&amp;href=http://railsonfire.github.com/{{post.url}}&amp;send=false&amp;layout=button_count&amp;width=400&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true" class="span-3"></iframe>
+    </span>
+    <span class="share">
+      <g:plusone size="medium" href="http://blog.railsonfire.com{{post.url}}"></g:plusone>
+    </span>
+    <span class="share">
+      <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="http://blog.railsonfire.com{{post.url}}" data-counter="right"></script>
+    </span>
+  </div>
+
+  <div class="span-15 last post-content">
+    <h3><a href="{{ post.url }}">{{ page.title }}</a></h3>
+    {% if content %}
+      {{ content }}
+    {% else %}
+      {{ page.content }}
+    {% endif %}
+  </div>
+</div>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'railsonfireblog'; // required: replace example with your forum shortname
+    var disqus_shortname = 'railsonfirehelp'; // required: replace example with your forum shortname
 
     // The following are highly recommended additional parameters. Remove the slashes in front to use.
     //var disqus_developer = 1
     var disqus_identifier = '{{post.url}}';
-    var disqus_url = 'http://blog.railsonfire.com{{post.url}}';
+    var disqus_url = 'http://help.railsonfire.com{{post.url}}';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
@@ -23,3 +47,4 @@ layout: default
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
