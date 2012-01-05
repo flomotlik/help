@@ -22,10 +22,6 @@ Git
   * Anything Ruby native (Rails, Sinatra, ...) is supported
   * Rspec, Cucumber, Test::Uni, Minitest, ...
   * Capybara(-webkit)
-* Java (Openjdk-6)
-  * Maven
-  * Ant
-  * Gradle
 
 ###Additional Tools
 * Selenium

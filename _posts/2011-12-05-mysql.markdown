@@ -4,3 +4,18 @@ title: MySql
 description: How to Setup MySql with Railsonfire
 categories: databases
 ---
+
+The best way to use MySQL on Railsonfire is to provide a separate database file that configures your app for MySQL and is copied to config/database.yml before executing any database operation.
+
+You can download a database file for [MySQL.](/files/rof-mysql-database.yml)
+Simply copy the file you need to your config directory and add
+
+    cp -f config/rof-mysql-database.yml config/database.yml
+
+to your railsonfire.yml file before any interaction with the database.
+
+You need to add the mysql2 gem to your Gemfile. By adding
+
+    gem 'mysql2' unless ENV["RAILSONFIRE"].nil?
+
+you can install the gems only when you are on Railsonfire.
