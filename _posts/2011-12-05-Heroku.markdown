@@ -1,0 +1,12 @@
+---
+layout: post
+title: Heroku Addon
+description: How to use Railsonfire as a Heroku Addon
+categories: setup
+---
+
+To start using Railsonfire as a Heroku Addon simply add it to one of your applications. A new User will be created for use with this specific app.
+
+You can always login through the resources page of your Heroku Application.
+
+The Heroku Addon provides a convenient way to create a new account. The rest of the interaction with Railsonfire is the same as for non Heroku accounts. To use Railsonfire for testing and deploying your code head over to [the How To add a new Project guide](/setup/Adding-a-project.html).

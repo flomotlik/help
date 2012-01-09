@@ -5,4 +5,4 @@ description: How to use NoSQL Databases with Railsonfire
 categories: databases
 ---
 
-Railsonfire currently supports MongoDB, Redis and Memcache. All of them run on default ports. Connecting to MongoDB, Redis and Memcache shouldn't need any further configuration than the default one.
+Railsonfire currently supports MongoDB, Redis and Memcache. All of them run on default ports. Connecting to MongoDB, Redis and Memcache shouldn't need any further configuration than the defaults.

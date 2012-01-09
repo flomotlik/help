@@ -18,8 +18,8 @@ Railsonfire helps by providing a simple service you can use to test and integrat
 ###Continuous Deployment
 Continuous Deployment is the process of releasing every new change made to your codebase as soon as automated tests ran successfully. The benefit of this approach is that you can release to your users very fast (up to several times a day if you wish) and thus react quickly to their changing needs.
 
-Furthermore it forces you to think about your infrastructure as a constantly changing system and for which you have to provide safeguards that, should something bad happen, allow you to get back to a safe state easily. This changes deployment into a non-issue as your whole infrastructure is geared toward it.
+Furthermore it forces you to think about your infrastructure as a constantly changing system. This helps you in providing safeguards that, should something bad happen, allow you to get back to a safe state easily. This makes deployment a non-issue as your whole infrastructure is built with constant change in mind.
 
-Continuous Deployment has several more advantages like quickly testing new features and removing them fast if they don't work. Eric Ries gives a great introduction of how continuous deployment is used at IMVU in [his blog](http://www.startuplessonslearned.com/2009/06/why-continuous-deployment.html)
+Continuous Deployment has several more advantages like quickly testing new features and removing them fast if they don't work. Eric Ries gives a great introduction on how continuous deployment is used at IMVU in [his blog](http://www.startuplessonslearned.com/2009/06/why-continuous-deployment.html)
 
 If you have any more questions send us a tweet to [@Railsonfire](http://twitter.com/Railsonfire) or an email to [flo@railsonfire.com](mailto:flo@railsonfire.com). The chat window in the lower right corner of our Site is also there for you.
