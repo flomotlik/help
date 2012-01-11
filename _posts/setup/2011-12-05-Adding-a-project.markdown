@@ -14,9 +14,10 @@ What to do
 
 ###Are there prerequisites?
 
-1. Logged in to Railsonfire and allowed access to GitHub
+1. Logged in to Railsonfire
 2. Local git version controlled ruby project
-3. GitHub remotes added to git repository
+3. Git remotes added to git repository
+4. GitHub access if you want Railsonfire to automatically set up GitHub
 
 ####for Heroku?
 
@@ -31,7 +32,9 @@ to install the latest version. Ruby 1.9.3, 1.9.2 and 1.8.7 are supported
 
 **railsonfire new
 
-You need to call this command in the folder of your ruby project. The gem will load all GitHub remotes and if you have several let you decide on which one to use. Then an ssh key is added to your GitHub Project so we can access it from our servers.
+You need to call this command in the folder of your ruby project. The gem will load all git remotes and if you have several let you decide on which one to use. If you use GitHub and want us to set it up for you an ssh key is added to your GitHub Project so we can access it from our servers.
+
+In case you use your own server we will write the SSH public key and a post-receive-hook to your current folder. The SSH key is so authenticate with your server. The post-receive-hook has to be placed in the correct folder to set it up for use with Railsonfire. See this [guide](http://book.git-scm.com/5_git_hooks.html) for more information.
 
 **Authenticate**
 to start adding a new project to railsonfire. You will be asked for your Railsonfire token for authentication. The gem will try to open your [Railsonfire Account Page]("http://railsonfire.com/users"), where you can find your Railsonfire token. Simply paste it into the command line.
