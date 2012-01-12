@@ -34,7 +34,7 @@ to install the latest version. Ruby 1.9.3, 1.9.2 and 1.8.7 are supported
 
 You need to call this command in the folder of your ruby project. The gem will load all git remotes and if you have several let you decide on which one to use. If you use GitHub and want us to set it up for you an ssh key is added to your GitHub Project so we can access it from our servers.
 
-In case you use your own server we will write the SSH public key and a post-receive-hook to your current folder. The SSH key is so authenticate with your server. The post-receive-hook has to be placed in the correct folder to set it up for use with Railsonfire. See this [guide](http://book.git-scm.com/5_git_hooks.html) for more information.
+In case you use your own server we will write the SSH public key and a post-receive-hook to your current folder. The SSH key is so authenticate with your server. The post-receive-hook has to be placed in the correct folder to set it up for use with Railsonfire. You need to make the post-receive-hook file executable for it to work. See this [guide](http://book.git-scm.com/5_git_hooks.html) for more information.
 
 **Authenticate**
 to start adding a new project to railsonfire. You will be asked for your Railsonfire token for authentication. The gem will try to open your [Railsonfire Account Page]("http://railsonfire.com/users"), where you can find your Railsonfire token. Simply paste it into the command line.
