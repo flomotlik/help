@@ -41,5 +41,3 @@ Of course before all the deployment we run our tests against PostgreSQL to make 
 This whole process takes only a couple of minutes and makes sure we deliver new features, bug fixes or small improvements as fast and safe as we can.
 
 The Railsonfire gem helps you with setting up a very basic form of this workflow. Give it a try and tell us your thoughts about continuous deployment and how best to use it.
-
-If you have any more questions send us a tweet to [@Railsonfire](http://twitter.com/Railsonfire) or an email to [flo@railsonfire.com](mailto:flo@railsonfire.com). The chat window in the lower right corner of our Site is also there for you

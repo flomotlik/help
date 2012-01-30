@@ -63,9 +63,3 @@ You need to add the pg or mysql2 gem to your Gemfile. By adding
     gem 'pg' unless ENV["RAILSONFIRE"].nil?
 
 you can install the gems only when you are on Railsonfire.
-
-###Support
-
-If you use our Heroku Addon and have further questions or need support please go to [https://support.heroku.com](https://support.heroku.com) and add a ticket there.
-
-You can also send an email to [flo@railsonfire.com](mailto:flo@railsonfire.com), a tweet to [@Railsonfire](http://twitter.com/railsonfire) or use the chat box in the lower right corner of our website.
