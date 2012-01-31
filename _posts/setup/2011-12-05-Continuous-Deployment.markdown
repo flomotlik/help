@@ -12,13 +12,16 @@ Setting up Continuous Deployment with Railsonfire can be done by adding a few co
       # Heroku Setup
       - mkdir ~/.heroku/
       - gem install heroku --no-ri  --no-rdoc
+      # Backup Production Database
+      - heroku pgbackups:capture --expire --app YOUR_PRODUCTION_APP
+      #Put Production Data into Staging app so you can run migrations against production data
+      - heroku pgbackups:restore DATABASE `heroku pgbackups:url --app PRODUCTION_APP` --app STAGING_APP --confirm STAGING_APP
       # Staging
       - git remote add staging git@heroku.com:YOUR_STAGING_APP.git
       - git push staging $COMMIT_ID:master -f
       - heroku rake db:migrate --app YOUR_STAGING_APP
       - ruby ./siteup.rb YOUR_STAGING_URL
       # Production
-      - heroku pgbackups:capture --expire --app YOUR_PRODUCTION_APP
       - git remote add heroku git@heroku.com:YOUR_PRODUCTION_APP.git
       - git push heroku $COMMIT_ID:master
       - heroku rake db:migrate --app YOUR_PRODUCTION_APP
@@ -26,7 +29,11 @@ Setting up Continuous Deployment with Railsonfire can be done by adding a few co
 
 The ***branch*** option specifies which branch is used for deployment. Only this branch will get deployed if all test commands pass.
 
-At first we add our Heroku staging application as a git remote. We then do a git force push to our staging app. After that we call a ruby script you can [download](/files/siteup.rb) that simply calls the url and checks that the return code is 200. If this works and the staging app doesn't fail we push to our production app and call the siteup script again against our production app.
+At first we capture a backup of our production database and then put this backup into our staging happ. Thus we can then run our migrations in staging, but with current production data.
+
+If your database becomes too large to do this for every build you can set up a rake task that backups your data every night and moves it into stating (Guide for this coming soon).
+
+Then we add our Heroku staging application as a git remote. We do a git force push to our staging app. After that we call a ruby script you can [download](/files/siteup.rb) that simply calls the url and checks that the return code is 200. If this works and the staging app doesn't fail we push to our production app and call the siteup script again against our production app.
 
 To be able to call the heroku gem you need to provide your heroku credentials. You can do this by adding
 
