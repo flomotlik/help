@@ -176,3 +176,6 @@ a:focus, a:hover, a:active {
 .accordion{
   min-height:200px;
 }
+pre{
+  white-space: pre-wrap;
+}
