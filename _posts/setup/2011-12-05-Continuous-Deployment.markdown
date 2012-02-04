@@ -10,7 +10,6 @@ Setting up Continuous Deployment with Railsonfire can be done by adding a few co
       :branch: master
       :commands:
       # Heroku Setup
-      - mkdir ~/.heroku/
       - gem install heroku --no-ri  --no-rdoc
       # Backup Production Database
       - heroku pgbackups:capture --expire --app YOUR_PRODUCTION_APP
@@ -19,19 +18,19 @@ Setting up Continuous Deployment with Railsonfire can be done by adding a few co
       # Staging
       - git remote add staging git@heroku.com:YOUR_STAGING_APP.git
       - git push staging $COMMIT_ID:master -f
-      - heroku rake db:migrate --app YOUR_STAGING_APP
+      - heroku run rake db:migrate --app YOUR_STAGING_APP
       - ruby ./siteup.rb YOUR_STAGING_URL
       # Production
       - git remote add heroku git@heroku.com:YOUR_PRODUCTION_APP.git
       - git push heroku $COMMIT_ID:master
-      - heroku rake db:migrate --app YOUR_PRODUCTION_APP
+      - heroku run rake db:migrate --app YOUR_PRODUCTION_APP
       - ruby ./siteup.rb YOUR_URL
 
 The ***branch*** option specifies which branch is used for deployment. Only this branch will get deployed if all test commands pass.
 
 At first we capture a backup of our production database and then put this backup into our staging happ. Thus we can then run our migrations in staging, but with current production data.
 
-If your database becomes too large to do this for every build you can set up a rake task that backups your data every night and moves it into stating (Guide for this coming soon).
+If your database becomes too large to do this for every build you can set up a rake task that backups your data every night and moves it into staging (Guide for this coming soon).
 
 Then we add our Heroku staging application as a git remote. We do a git force push to our staging app. After that we call a ruby script you can [download](/files/siteup.rb) that simply calls the url and checks that the return code is 200. If this works and the staging app doesn't fail we push to our production app and call the siteup script again against our production app.
 
