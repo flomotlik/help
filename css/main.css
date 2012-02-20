@@ -14,7 +14,7 @@ body{
   font: 24px Arial, sans-serif;
   color: #222;
   position: relative;
-  top:30px;
+  top:39px;
   text-decoration:none;
   text-align:right;
 }
@@ -29,16 +29,20 @@ body{
     min-height: 300px;
     width:589px;
     margin-right:0px;
-    border-right: 1px solid #CCC;
 }
 
 #about{
-    border-top:1px solid #CCC;
+  border-left:1px solid #CCC;
+  border-top:1px solid #CCC;
+}
+
+#about .bordered{
+    border-bottom:1px solid #CCC;
+    border-right:1px solid #CCC;
 }
 
 #about h3{
-    color: #999;
-    height:20px;
+    height:30px;
     text-indent:20px;
     margin-bottom:0px;
 }
@@ -172,9 +176,20 @@ a:focus, a:hover, a:active {
 #footer a{
   text-decoration:none;
 }
-
-.accordion{
-  min-height:200px;
+.accordion h3{
+  font-size: 13px;
+  color: #252323;
+  border:none;
+  border-top:1px solid #CCC;
+}
+.accordion .ui-state-default{
+  background-image:url("/images/bg_accordion_closed.png");
+}
+.accordion ul{
+  border:none;
+}
+.accordion ul li{
+  margin-bottom:5px;
 }
 pre{
   white-space: pre-wrap;
