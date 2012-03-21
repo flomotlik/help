@@ -11,6 +11,16 @@ If you encounter the following problem:
 
 please make sure that you have the latest version of the selenium-webdriver in your bundle. If you use Capybara it should be enough to simply update to the latest version of capybara, as it depends on the latest selenium-webdriver version.
 
+Simply run
+
+    bundle update selenium-webdriver
+
+or
+
+    bundle update capybara
+
+to update the specific dependencies.
+
 This Error can happen when Firefox was updated and you still use an older version of the selenium-webdriver gem. As we have to support lots of projects with vastly different dependencies we decided that our update policy is to always keep up to date with the latest Ubuntu repository. Thus we have a stable and well defined base on which to build upon. Sometimes this may force our users to update their depdendencies.
 
 We apologize for any inconvenience, but hope you understand our reasoning behind this.
