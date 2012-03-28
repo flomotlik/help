@@ -12,9 +12,16 @@ Following is an example of the engineyard and deploy section set up for deployme
     deploy:
       branch: master
       commands:
-      - ey deploy -r $COMMIT_ID
+      - ey deploy -e YOUR_STAGING_ENVIRONMENT -r $COMMIT_ID
+      - wget YOUR_STAGING_URL -q
+      - ey deploy -e YOUR_PRODUCTION_ENVIRONMENT -r $COMMIT_ID
+      - wget YOUR_PRODUCTION_URL -q
     engineyard:
       api_token: YOUR_TOKEN
+
+By setting your environment with ***-e*** you can make sure to deploy first to staging and only then to production.
+
+By calling your ***STAGING_URL*** and ***PRODUCTION_URL*** with wget after deployment you make sure that the website is deployed correctly and running as wget returns and exit value other than 0 when the Website HTTP Status is != 200. Thus the deployment fails on Railsonfire.
 
 You have to set ***-r $COMMIT_ID*** to only deploy the commit that was currently tested.
 
