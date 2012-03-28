@@ -194,3 +194,10 @@ a:focus, a:hover, a:active {
 pre{
   white-space: pre-wrap;
 }
+.disable{
+  font-weight:bold;
+}
+
+.dsq-brlink{
+  display:none;
+}
