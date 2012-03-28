@@ -23,7 +23,7 @@ By setting your environment with ***-e*** you can make sure to deploy first to s
 
 By calling your ***STAGING_URL*** and ***PRODUCTION_URL*** with wget after deployment you make sure that the website is deployed correctly and running as wget returns and exit value other than 0 when the Website HTTP Status is != 200. Thus the deployment fails on Railsonfire.
 
-For example if you deploy to your staging app and the subsequent call to YOUR_STAGING_URL fails the deploy process will be stopped and there will be no deployment to your production app.
+For example if you deploy to your staging app and the subsequent call to your ***STAGING_URL*** fails the deploy process will be stopped and there will be no deployment to your production app.
 
 You have to set ***-r $COMMIT_ID*** to only deploy the commit that was currently tested.
 
