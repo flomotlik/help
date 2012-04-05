@@ -10,7 +10,7 @@ You can start by reading
 
 If you want to start using our Service head over to [How to add a project to Railsonfire](/setup/Adding-a-project.html)
 
-To see how to use [MySQL](databases/mysql.html), [PostgreSQL](databases/postgresql.html) or [NoSQL](databases/nosql.html) Databases head over to our Database section.
+To see how to set up the supported databases head over to our [Database section](setup/database.html).
 
 If you use Railsonfire as a **HEROKU Addon** see our [Heroku Guide](/setup/heroku.html)
 
