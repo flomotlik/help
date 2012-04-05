@@ -1,0 +1,24 @@
+---
+layout: post
+title: Databases
+description: How to test against the databases supported by railsonfire
+categories: setup
+---
+
+
+#### SQL Databases
+
+If you use MySQL or PostgreSQL Railsonfire automatically detects the gems in your Gemfile and sets database.yml accordingly.
+
+For example if you have either of those gems in your Gemfile
+
+    gem 'pg'
+    gem 'mysql2'
+
+one of the following files will be copied to config/database.yml
+
+* [MySQL.](/files/rof-mysql-database.yml)
+* [PostgreSQL.](/files/rof-postgres-database.yml)
+
+#### NoSQL
+Railsonfire currently supports MongoDB, Redis and Memcache. All of them run on default ports. Connecting to MongoDB, Redis and Memcache shouldn't need any further configuration than the defaults.
