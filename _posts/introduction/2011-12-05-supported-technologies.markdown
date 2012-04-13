@@ -26,3 +26,5 @@ Git
 ###Additional Tools
 * Selenium
 * Firefox
+* Chrome
+

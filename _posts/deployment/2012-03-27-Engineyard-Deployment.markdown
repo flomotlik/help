@@ -2,7 +2,7 @@
 layout: post
 title: Engine Yard Deployment
 description: How to use Railsonfire to deploy to Engine Yard
-categories: setup
+categories: deployment
 ---
 
 Deploying to EngineYard is actually quite simple. You have to set up your railsonfire.yml file with your engineyard apitoken and add the deploy commands. You can find your apitoken in YOUR-HOME-FOLDER/.eyrc .
@@ -21,7 +21,7 @@ Following is an example of the engineyard and deploy section set up for deployme
 
 By setting your environment with ***-e*** you can make sure to deploy first to staging and only then to production.
 
-By calling your ***STAGING_URL*** and ***PRODUCTION_URL*** with wget after deployment you make sure that the website is deployed correctly and running as wget returns and exit value other than 0 when the Website HTTP Status is != 200. Thus the deployment fails on Railsonfire.
+By calling your ***STAGING_URL*** and ***PRODUCTION_URL*** with wget after deployment you make sure that the website is deployed correctly and running as wget returns an exit value other than 0 when the Website HTTP Status is != 200. Thus the deployment fails on Railsonfire.
 
 For example if you deploy to your staging app and the subsequent call to your ***STAGING_URL*** fails the deploy process will be stopped and there will be no deployment to your production app.
 
