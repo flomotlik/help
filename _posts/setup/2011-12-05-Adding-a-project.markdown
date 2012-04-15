@@ -12,7 +12,7 @@ What to do
     add the created railsonfire.yml to your repository
     push to your git server
 
-All of this can be easily done in less than 2 minutes.
+***All of this can be easily done in less than 2 minutes.***
 
 ###Are there prerequisites?
 
