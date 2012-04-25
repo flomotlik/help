@@ -77,4 +77,6 @@ The meaning of the values are:
 
 *   **url**
 
-    Specifies the URL that should be called after deployment to make sure the application still works. If your application uses basic auth (which makes a lot of sense in staging for example) set your url to something like http://USERNAME:PASSWORD@APP_NAME.heroku.com
+    Specifies the URL that should be called after deployment to make sure the application still works.
+
+    If your application uses basic auth (which makes a lot of sense in staging for example) set your url to something like ***http://USERNAME:PASSWORD@APP_NAME.heroku.com***
