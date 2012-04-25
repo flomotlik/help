@@ -4,3 +4,6 @@ title: Selenium
 description: Using Selenium with Railsonfire
 categories: setup
 ---
+Selenium is supported out of the box including running it through Firefox or Chrome.
+
+Default Setup for Selenium is sufficient to run it.
