@@ -182,9 +182,6 @@ a:focus, a:hover, a:active {
   border:none;
   border-top:1px solid #CCC;
 }
-.accordion .ui-state-default{
-  background-image:url("/images/bg_accordion_closed.png");
-}
 .accordion ul{
   border:none;
 }

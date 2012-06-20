@@ -32,7 +32,7 @@ Following is a sample railsonfire.yml with all the possible elements and some du
     The *test* section defines all the test commands you want us to run for your project under the commands section
 * *deploy*
 
-    *Deploy* defines the branch that should be used for deployment as well as all the commands used for deployment. See our [Deployment Guide](/setup/Continuous-Deployment.html) for more information.
+    *Deploy* defines the branch that should be used for deployment as well as all the commands used for deployment. See our [Deployment Guide](/deployment/Continuous-Deployment.html) for more information.
 * *ruby_versions*
 
     You can list all the ruby versions you want to test against in this section. All test commands will be run with every ruby_version. You need to make sure that no conflicts happen when a certain test command is run again for another ruby version.
