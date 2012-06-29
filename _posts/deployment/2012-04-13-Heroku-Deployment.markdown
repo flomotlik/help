@@ -69,7 +69,7 @@ The meaning of the values are:
 
 *   **migrate**
 
-    If set to true will start migrations on heroku by running "heroku run rake db:migrate --app STAGING-OR-PRODUCTION-APP"
+    If set to true will start migrations on heroku by running "heroku run rake db:migrate --app STAGING-OR-PRODUCTION-APP".
 
 *   **restore_production**
 
