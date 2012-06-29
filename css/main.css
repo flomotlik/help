@@ -1,13 +1,39 @@
 body{
-    padding-top:20px;
+  background-repeat: repeat-x;
+  background-image:url(/images/bg_lines_repeater.png)
 }
 
-#navigation{
+#menu{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 13px;
+  margin-bottom: 9px;
+  height: 21px;
+}
+#menu a{
+  font-family: arial;
+  font-weight: bold;
+  font-size: 14px;
+  color: #06C;
+  text-decoration: none;
+}
+#company_links a, #user_links a{
+  margin-right:10px;
+}
+#company_links a:last-child {
+  margin-right: 0px;
+}
+.social-media a {
+  height: 23px;
+  width: 24px;
+  float: right;
+  margin-left: 2px;
+  margin-right:0px;
 }
 
 #header{
-    margin-bottom: 20px;
-    height:73px;
+  margin: 14px 0px 8px 0px;
+  height: 74px;
 }
 
 #railsonfire-link{
@@ -19,16 +45,28 @@ body{
   text-align:right;
 }
 
-#rss{
-  text-align:right;
-  position: relative;
-  bottom: 4px;;
+#categories a{
+  text-decoration:none;
+  font-family:verdana;
+  color:#000000;
+}
+
+#categories h3 a{
+  font-size:14pt;
+  font-weight:bold;
+}
+
+#categories li a{
+  font-size:11pt;
+}
+
+#categories li a:hover{
+  text-decoration:underline;
 }
 
 #content{
-    min-height: 300px;
-    width:589px;
-    margin-right:0px;
+  min-height: 300px;
+  margin-right:0px;
 }
 
 #about{
@@ -37,14 +75,14 @@ body{
 }
 
 #about .bordered{
-    border-bottom:1px solid #CCC;
-    border-right:1px solid #CCC;
+  border-bottom:1px solid #CCC;
+  border-right:1px solid #CCC;
 }
 
 #about h3{
-    height:30px;
-    text-indent:20px;
-    margin-bottom:0px;
+  height:30px;
+  text-indent:20px;
+  margin-bottom:0px;
 }
 
 #about .about_header{
@@ -55,8 +93,8 @@ body{
 }
 
 #about_content{
-    margin-bottom: 2px;
-    padding-top: 9px;
+  margin-bottom: 2px;
+  padding-top: 9px;
 }
 
 #about_content a{
@@ -65,17 +103,17 @@ body{
 }
 
 #about #about_content img{
-    height:64px;
-    width:64px;
-    padding: 3px;
-    border: 1px solid #CCC;
-    float:left;
-    margin-left:20px;
-    margin-right:10px;
+  height:64px;
+  width:64px;
+  padding: 3px;
+  border: 1px solid #CCC;
+  float:left;
+  margin-left:20px;
+  margin-right:10px;
 }
 
 #tweets h3{
-    border-top: 1px solid #CCC;
+  border-top: 1px solid #CCC;
 }
 
 .twitter-follow-button{
@@ -83,7 +121,7 @@ body{
 }
 
 .twtr-ft, .twtr-hd{
-    display:none;
+  display:none;
 }
 
 .twtr-tweet-text p{
@@ -91,16 +129,16 @@ body{
 }
 
 .post-header{
-    border-bottom: 1px solid #CCC;
-    border-top:1px solid #CCC;
-    margin-right:0px;
-    height:20px;
-    padding:9px 0px 9px 20px;
-    width:571px;
+  border-bottom: 1px solid #CCC;
+  border-top:1px solid #CCC;
+  margin-right:0px;
+  height:20px;
+  padding:9px 0px 9px 20px;
+  width:571px;
 }
 
 .post a{
-    text-decoration:none;
+  text-decoration:none;
 }
 
 .post-header a{
@@ -126,7 +164,7 @@ body{
 }
 
 .post-content h3 a:hover, .post-content h3 a:focus {
-color: #0099FF;
+  color: #0099FF;
 }
 
 #header #pages a:focus, #header #pages a:hover, #header #pages a:active {
