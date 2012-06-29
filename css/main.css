@@ -1,3 +1,5 @@
+@font-face { font-family: Railsonfire; src: url('/files/railsonfire-font.otf'); }
+
 body{
   background-repeat: repeat-x;
   background-image:url(/images/bg_lines_repeater.png)
@@ -7,7 +9,7 @@ body{
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 13px;
-  margin-bottom: 9px;
+  margin-bottom: 20px;
   height: 21px;
 }
 #menu a{
@@ -35,14 +37,11 @@ body{
   margin: 14px 0px 8px 0px;
   height: 74px;
 }
-
-#railsonfire-link{
-  font: 24px Arial, sans-serif;
-  color: #222;
+#try_now{
+  z-index:5;
   position: relative;
-  top:39px;
-  text-decoration:none;
-  text-align:right;
+  top:-20px;
+  float:right;
 }
 
 #categories a{
@@ -54,6 +53,10 @@ body{
 #categories h3 a{
   font-size:14pt;
   font-weight:bold;
+}
+
+#categories li{
+  list-style-image:url(/images/arrow_dark.png);
 }
 
 #categories li a{
@@ -69,102 +72,37 @@ body{
   margin-right:0px;
 }
 
-#about{
-  border-left:1px solid #CCC;
-  border-top:1px solid #CCC;
+h2{
+  font-family:Railsonfire;
+  font-size:20px;
+  font-weight:bold;
 }
 
-#about .bordered{
-  border-bottom:1px solid #CCC;
-  border-right:1px solid #CCC;
+.landing_link{
+  width:233px;
+  height: 226px;
+  display:inline-block;
 }
 
-#about h3{
-  height:30px;
-  text-indent:20px;
-  margin-bottom:0px;
+#add_project{
+  background-image:url(/images/landing/getting_started.png)
+}
+#add_project:hover{
+  background-image:url(/images/landing/getting_started_hover.png)
 }
 
-#about .about_header{
-  border-bottom:1px solid #CCC;
-  padding:9px 0px 0px 0px;
-  height: 29px;
-  margin-bottom:9px;
+#deploy{
+  background-image:url(/images/landing/deployment.png)
+}
+#deploy:hover{
+  background-image:url(/images/landing/deployment_hover.png)
 }
 
-#about_content{
-  margin-bottom: 2px;
-  padding-top: 9px;
+#troubleshooting{
+  background-image:url(/images/landing/troubleshooting.png)
 }
-
-#about_content a{
-  text-decoration:none;
-  color: #222;
-}
-
-#about #about_content img{
-  height:64px;
-  width:64px;
-  padding: 3px;
-  border: 1px solid #CCC;
-  float:left;
-  margin-left:20px;
-  margin-right:10px;
-}
-
-#tweets h3{
-  border-top: 1px solid #CCC;
-}
-
-.twitter-follow-button{
-  margin-left:10px;
-}
-
-.twtr-ft, .twtr-hd{
-  display:none;
-}
-
-.twtr-tweet-text p{
-  font: 13px Arial, sans-serif;
-}
-
-.post-header{
-  border-bottom: 1px solid #CCC;
-  border-top:1px solid #CCC;
-  margin-right:0px;
-  height:20px;
-  padding:9px 0px 9px 20px;
-  width:571px;
-}
-
-.post a{
-  text-decoration:none;
-}
-
-.post-header a{
-  color: #555;
-}
-
-.post-content{
-  margin-top:20px;
-  margin-left:20px;
-  width:560px;
-  font: 13px Arial, sans-serif;
-}
-
-.post-content h3 a{
-  font: 24px Arial, sans-serif;
-  color: #111;
-}
-
-.post-content img{
-  padding: 2px;
-  border: 1px solid #CCC;
-  background-color: white;
-}
-
-.post-content h3 a:hover, .post-content h3 a:focus {
-  color: #0099FF;
+#troubleshooting:hover{
+  background-image:url(/images/landing/troubleshooting_hover.png)
 }
 
 #header #pages a:focus, #header #pages a:hover, #header #pages a:active {
@@ -175,12 +113,6 @@ a:focus, a:hover, a:active {
   color: #0099FF;
 }
 
-.share{
-  float: left;
-}
-.post li{
-  margin-bottom:10px;
-}
 #footer ul {
   list-style-type: none;
   padding-left: 0px;
@@ -214,25 +146,9 @@ a:focus, a:hover, a:active {
 #footer a{
   text-decoration:none;
 }
-.accordion h3{
-  font-size: 13px;
-  color: #252323;
-  border:none;
-  border-top:1px solid #CCC;
-}
-.accordion ul{
-  border:none;
-}
-.accordion ul li{
-  margin-bottom:5px;
-}
 pre{
   white-space: pre-wrap;
 }
 .disable{
   font-weight:bold;
-}
-
-.dsq-brlink{
-  display:none;
 }

@@ -5,7 +5,7 @@ sidebar_cats:
 - deployment
 - troubleshooting
 ---
-
+{% assign url = "https://www.railsonfire.com" %}
 <!DOCTYPE html>
 <html>
   <!-- Looking at our Code? If you find an error send an email to ideserveabeer@railsonfire.com -->
@@ -58,17 +58,18 @@ sidebar_cats:
       <a href="/" class="span-14">
         <img src="/images/rof_logo.png"/>
       </a>
+      <img src="/images/try_now_ribbon.png" id="try_now"/>
     </div>
     <div id="menu" class="span-24 last">
       <div id="user_links" class="span-8">
-        <strong><a href="/">Service</a></strong>
-        <strong><a href="/pricing">Pricing</a></strong>
-        <a href="http://help.railsonfire.com" target="_blank">Support</a>
+        <strong><a href="{{url}}">Service</a></strong>
+        <strong><a href="{{url}}/pricing">Pricing</a></strong>
+        <a href="http://help.railsonfire.com">Support</a>
       </div>
       <div id="company_links" class="prepend-9 span-4">
         <a href="http://blog.railsonfire.com">Blog</a>
-        <a href="/team">Team</a>
-        <a href="/contact">Contact</a>
+        <a href="{{url}}/team">Team</a>
+        <a href="{{url}}/contact">Contact</a>
       </div>
       <strong class="span-3 last social-media">
         <a href="http://www.linkedin.com/company/railsonfire" target="_blank"><img src="/images/icons/linkedin-icon.png"/></a>
@@ -78,10 +79,10 @@ sidebar_cats:
       </strong>
     </div>
     <div id="main" class="span-24 last">
-      <div id="categories" class="span-6">
+      <div id="categories" class="span-5">
         <div>
             {% for cat in (page.sidebar_cats) %}
-            <h3><a href="#">{{ cat | replace:'_',' ' | capitalize }}</a></h3>
+            <h3><a href="">{{ cat | replace:'_',' ' | capitalize }}</a></h3>
             <ul>
               {% for post in site.posts reversed %}{% if post.categories contains cat %}
               {% if page.title == post.title %}
@@ -94,10 +95,9 @@ sidebar_cats:
             {% endfor %}
           </div> <!-- /sidebar-module -->
         </div>
-      <div id="content" class="span-18">
+      <div id="content" class="span-18 last">
         {{ content }}
       </div>
-      {% assign url = "https://www.railsonfire.com" %}
       <div id="footer" class="span-24 last">
         <div class="span-7">
           <h3>Service</h3>

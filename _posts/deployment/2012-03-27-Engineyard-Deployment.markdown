@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Engine Yard Deployment
+title: Deploy to Engine Yard
 description: How to use Railsonfire to deploy to Engine Yard
 categories: deployment
 ---

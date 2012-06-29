@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Heroku Deployment
+title: Deploy to Heroku
 description: Setup and best practices deploying to Heroku
 categories: deployment
 ---

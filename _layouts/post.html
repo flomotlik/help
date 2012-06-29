@@ -2,54 +2,14 @@
 layout: default
 ---
 
-<div class="post" class="span-15 last">
-  <div class="post-header span-15 last">
-    <span class="share">
-      <a href="http://twitter.com/share" class="twitter-share-button" data-text="Railsonfire Help - {{post.title}} -" data-url="http://help.railsonfire.com{{page.url}}" data-count="horizontal" data-via="railsonfire">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    </span>
-    <span class="share">
-      <iframe src="https://www.facebook.com/plugins/like.php?app_id=165675853500765&amp;href=http://railsonfire.github.com/{{page.url}}&amp;send=false&amp;layout=button_count&amp;width=400&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true" class="span-3"></iframe>
-    </span>
-    <span class="share">
-      <g:plusone size="medium" href="http://help.railsonfire.com{{page.url}}"></g:plusone>
-    </span>
-    <span class="share">
-      <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="http://help.railsonfire.com{{page.url}}" data-counter="right"></script>
-    </span>
-  </div>
+<h2>{{ page.title }}</h2>
+{% if content %}
+  {{ content }}
+{% else %}
+  {{ page.content }}
+{% endif %}
+<h3>Support</h3>
 
-  <div class="span-15 last post-content">
-    <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-    {% if content %}
-      {{ content }}
-    {% else %}
-      {{ page.content }}
-    {% endif %}
-    <h3>Support</h3>
+<p>If you use our Heroku Addon and have further questions or need support please go to <a href="https://support.heroku.com" target="_blank">https://support.heroku.com</a> and add a ticket there.</p>
 
-    <p>If you use our Heroku Addon and have further questions or need support please go to <a href="https://support.heroku.com" target="_blank">https://support.heroku.com</a> and add a ticket there.</p>
-
-    <p>You can also send an email to <a href="mailto:flo@railsonfire.com">flo@railsonfire.com</a>, a tweet to <a href="http://twitter.com/railsonfire" target="_blank">@Railsonfire</a> or use the chat box in the lower right corner of our website.</p>
-  </div>
-</div>
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'railsonfirehelp'; // required: replace example with your forum shortname
-
-    // The following are highly recommended additional parameters. Remove the slashes in front to use.
-    //var disqus_developer = 1
-    var disqus_identifier = '{{page.url}}';
-    var disqus_url = 'http://help.railsonfire.com{{page.url}}';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-
+<p>You can also send an email to <a href="mailto:flo@railsonfire.com">flo@railsonfire.com</a>, a tweet to <a href="http://twitter.com/railsonfire" target="_blank">@Railsonfire</a> or use the chat box in the lower right corner of our website.</p>

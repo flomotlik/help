@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Continuous Deployment
+title: Deploy Anywhere
 description: Setup and best practices for Continuous Deployment
 categories: deployment
 ---
