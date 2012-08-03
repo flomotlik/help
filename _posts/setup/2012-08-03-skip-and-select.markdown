@@ -5,15 +5,15 @@ description: Select or Skip specific branches to control all of your builds
 categories: setup
 ---
 We will show you first how you can automatically disable all branches
-except for ones you set specifically (opt-in) and then how you can
+except for ones you enable specifically (opt-in) and then how you can
 skip specific branches or commits (opt-out).
 
 Those two methods can of course be combined.
 
 ###Select specific branches (opt-in)
 
-You can set config parameter ***ci_branches*** to enable only specific
-branches to be built. It takes a comma separated list of branch-names.
+You can set the config parameter ***ci_branches*** to enable only specific
+branches to be built. It takes a comma separated list of branch names.
 
 Add a config parameter ***ci_branches*** to your project by running:
 
@@ -21,7 +21,7 @@ Add a config parameter ***ci_branches*** to your project by running:
     KEY:ci_branches
     VALUE: master,production,otherbranch
 
-From now on only ***master,production,otherbranch*** will be tested.
+From now on only ***master,production,otherbranch*** will be built.
 
 ###Skip branches or commits (opt-out)
 
