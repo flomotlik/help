@@ -23,6 +23,13 @@ Add a config parameter ***ci_branches*** to your project by running:
 
 From now on only ***master,production,otherbranch*** will be built.
 
+If you want to remove the limitation simply run
+
+    railsonfire config remove
+    KEY:ci_branches
+
+to remove the configuration. All branches will be tested from then on.
+
 ###Skip branches or commits (opt-out)
 
 You can append ***--skip-ci*** to any branch to exclude it. For example
