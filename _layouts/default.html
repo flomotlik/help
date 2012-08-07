@@ -79,14 +79,14 @@ sidebar_cats:
       </strong>
     </div>
     <div id="main" class="span-24 last">
-      <div id="categories" class="span-5">
+      <div id="categories" class="span-6">
         <div>
             {% for cat in (page.sidebar_cats) %}
             <h3><a href="">{{ cat | replace:'_',' ' | capitalize }}</a></h3>
             <ul>
               {% for post in site.posts reversed %}{% if post.categories contains cat %}
               {% if page.title == post.title %}
-              <li class="disable"><span>{{ page.title }}</span></li>
+              <li><a class='disable' href="{{ post.url }}">{{ post.title }}</a></li>
               {% else %}
               <li><a href="{{ post.url }}">{{ post.title }}</a></li>
               {% endif %}
@@ -95,7 +95,7 @@ sidebar_cats:
             {% endfor %}
           </div> <!-- /sidebar-module -->
         </div>
-      <div id="content" class="span-18 last">
+      <div id="content" class="span-17 last">
         {{ content }}
       </div>
       <div id="footer" class="span-24 last">
