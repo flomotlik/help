@@ -7,7 +7,7 @@ categories: setup
 To make the setup and interaction with Railsonfire as easy as possible we implemented a gem. To use it to interact with Railsonfire a few simple steps are necessary.
 What to do
 
-    gem install railsonfire
+    gem install railsonfire (DO NOT ADD TO GEMFILE)
     railsonfire create
     add the created railsonfire.yml to your repository
     push to your git server
@@ -26,6 +26,9 @@ What to do
 **gem install railsonfire**
 
 to install the latest version. Ruby 1.9.3, 1.9.2 and 1.8.7 are supported
+
+DO NOT ADD THE GEM TO YOUR GEMFILE. This can lead to unintended
+consequences and it is not necessary.
 
 **railsonfire create**
 
