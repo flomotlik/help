@@ -7,7 +7,7 @@ categories: deployment
 
 Deploying to EngineYard is actually quite simple. You have to set up your railsonfire.yml file with your engineyard apitoken and add the deploy commands. You can find your apitoken in YOUR-HOME-FOLDER/.eyrc .
 
-Following is an example of the engineyard and deploy section set up for deployment to EngineYard.
+Following is an example of the engineyard and deploy section set up for deployment to EngineYard. You can provide your EngineYard Token either via the railsonfire.yml or add it to your project configuration by running ***railsonfire config add*** in your app folder and adding ***ENGINEYARD_API_TOKEN*** as key and your token as the value.
 
     deploy:
       branch: master
