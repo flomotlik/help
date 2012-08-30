@@ -7,7 +7,7 @@ categories: deployment
 
 Deploying to EngineYard is actually quite simple. You have to set up your railsonfire.yml file with your engineyard apitoken and add the deploy commands. You can find your apitoken in YOUR-HOME-FOLDER/.eyrc .
 
-Following is an example of the engineyard and deploy section set up for deployment to EngineYard. You can provide your EngineYard Token either via the railsonfire.yml or add it to your project configuration by running ***railsonfire config add*** in your app folder and adding ***ENGINEYARD_API_TOKEN*** as key and your token as the value.
+Following is an example of the engineyard and deploy section set up for deployment to EngineYard. You can provide your EngineYard Token either via the railsonfire.yml or add it to your project configuration by running ***railsonfire config add*** in your app folder and set ***ENGINEYARD\_API\_TOKEN*** as key and your token as the value.
 
     deploy:
       branch: master
@@ -27,4 +27,6 @@ For example if you deploy to your staging app and the subsequent call to your **
 
 You have to set ***-r $COMMIT_ID*** to only deploy the commit that was currently tested.
 
-We are currently working on a new version of our Gem and system that automates these steps much more and gives you the ability to add your apitoken and other metadata to Railsonfire directly, so it doesn't have to be stored in your commit history.
+You can set the ***branch*** attribute to the branch you want to use for
+deployment. This way you can make sure you only deploy whenever you
+choose to.
