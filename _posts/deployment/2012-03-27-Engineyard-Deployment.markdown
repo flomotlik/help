@@ -13,9 +13,9 @@ Following is an example of the engineyard and deploy section set up for deployme
       branch: master
       commands:
       - ey deploy -e YOUR_STAGING_ENVIRONMENT -r $COMMIT_ID
-      - wget YOUR_STAGING_URL -q
+      - curl -sSfL YOUR_STAGING_URL > /dev/null
       - ey deploy -e YOUR_PRODUCTION_ENVIRONMENT -r $COMMIT_ID
-      - wget YOUR_PRODUCTION_URL -q
+      - curl -sSfL YOUR_PRODUCTION_URL > /dev/null
     engineyard:
       api_token: YOUR_TOKEN
 
