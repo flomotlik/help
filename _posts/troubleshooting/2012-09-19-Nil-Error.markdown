@@ -1,0 +1,16 @@
+---
+layout: post
+title: Nil Error at initialization
+description: What Nil Errors during Initialization may be
+categories: troubleshooting
+---
+If you ever encounter an error similar to
+
+    undefined method `strip' for nil:NilClass
+
+or any other error during your initialization that it may be that you
+forgot the set ENV variables, but refer to them during your
+initialisation.
+
+Check the file where the error occurs and see if it references and ENV
+and check if you set it with our [ENV variable support](/setup/setting-env-vars.html).
