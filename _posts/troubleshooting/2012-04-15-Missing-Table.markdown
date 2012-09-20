@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Table Missing
+title: Relation doesn't exist (Table missing)
 description: What to do when a certain Table can't be found
 categories: troubleshooting
 ---
