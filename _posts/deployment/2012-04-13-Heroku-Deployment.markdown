@@ -73,7 +73,7 @@ The meaning of the values are:
 
 *   **restore_production**
 
-    Only in Staging. If set to true restores the production database to staging before running migrations. Very helpful to make sure the migration works on current production data. The production database may be to big to do this for every build, so it is turned off by default.
+    Only in Staging. If set to true it takes a backup of the production database and imports it into your staging application before running migrations. Very helpful to make sure the migration works on current production data. The production database may be to big to do this for every build, so it is turned off by default.
 
 *   **url**
 
