@@ -7,9 +7,23 @@ categories: setup
 Setting up PostGIS on Railsonfire is extremely simple. All you need to
 do is add the ***activerecord-postgis-adapter*** gem to your Gemfile.
 
-Additionally in your railsonfire.yml add ***bundle exec rake
-db:create*** to your setup commands before running ***bundle exec rake db:migrate*** or
-***bundle exec rake db:schema:load***.
+Make sure you follow the setup steps outlined by the
+[activerecord-postgis-adapter](https://github.com/dazuma/activerecord-postgis-adapter#installation-and-configuration)
+including requiring its railtie. Try running ***bundle exec rake
+db:create*** locally before to make sure everything works out fine.
+
+Additionally in your railsonfire.yml add
+
+    bundle exec rake db:create
+
+to your setup commands before running
+
+    bundle exec rake db:migrate
+
+or
+
+    bundle exec rake db:schema:load
+
 This will set up the database with the correct postgis extensions.
 
 We autodetect the ***postgis*** gem and set up your database.yml
