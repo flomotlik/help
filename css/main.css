@@ -157,3 +157,20 @@ pre{
   font-weight:bold;
   font-size:10px;
 }
+
+.socialbuttons {
+  margin-bottom: -30px;
+  margin-top: 2px;
+
+  a {
+    padding-right: 20px;
+  }
+}
+
+.fb-like {
+  padding-right: 20px;
+}
+
+.g-plusone {
+   padding-right: 20px;
+}

@@ -12,6 +12,12 @@ sidebar_cats:
   <head>
     <title>{{ page.title }} - Railsonfire</title>
     <meta name="description" content="{{ page.description }}"/>
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:image" content="http://help.railsonfire.com/images/rof_logo.png" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="http://help.railsonfire.com{{ page.url }}" />
+    <meta property="fb:admins" content="moritzplassnig" />
     <meta name="google-site-verification" content="jkNiT3IkokTBHUog4wQgLCWb7bwaqT9OVkfC49-GaPc" />
     <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
@@ -20,6 +26,7 @@ sidebar_cats:
     <![endif]-->
     <link rel="stylesheet" href="/css/jquery-ui-1.8.17.custom.css" type="text/css" />
     <link rel="stylesheet" href="/css/main.css" type="text/css" />
+    <link rel="canonical" href="https://www.railsonfire.com"/>
     <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
     <script src="/js/main.js" type="text/javascript"></script>
@@ -73,6 +80,14 @@ sidebar_cats:
           {{ content }}
         </div>
         <div id="footer" class="span-24 last">
+            <div class="socialbuttons">
+               <a href="https://angel.co/railsonfire?follow=1&type=Startup&id=24507"></a>
+              <div class="fb-like" data-href="https://www.facebook.com/railsonfire" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+               <a href="http://twitter.com/railsonfire" class="twitter-follow-button">Follow @railsonfire</a>
+              <div class="g-plusone" data-size="medium"></div>
+            </div>
+      </div>
+        <div id="footer" class="span-24 last">
           <div class="span-7">
             <h3>Service</h3>
             <ul>
@@ -124,7 +139,22 @@ sidebar_cats:
         </script>
         <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">;
         </script>
-
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=215491298581056";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="https://angel.co/javascripts/embed.js" type="text/javascript"></script>
+<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
         <noscript>
           <div style="display:inline;">
             <img height="1" width="1" style="border-style:none;" alt="" src="https://www.googleadservices.com/pagead/conversion/1009317086/?value=0&label=QcOYCMqUiwMQ3umj4QM&guid=ON&script=0"/>;
