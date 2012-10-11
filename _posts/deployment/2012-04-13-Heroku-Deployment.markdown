@@ -57,7 +57,7 @@ The meaning of the values are:
 
 *   **branch**
 
-    Specifies which branch is used for deployment. Only this branch will get deployed if all test commands pass. You can for example have a separate **production** branch in your repository that you only push to when you want to deploy. Thus you can manually trigger when deployment takes place. This value does not correspond in any way with the branch attribute that can be specifiec directly for deploy.
+    Specifies which branch is used for deployment. Only this branch will get deployed if all test commands pass. You can for example have a separate **production** branch in your repository that you only push to when you want to deploy. Thus you can manually trigger when deployment takes place. This value does not correspond in any way with the branch attribute that can be specific directly for deploy.
 
 *   **backup**
 
