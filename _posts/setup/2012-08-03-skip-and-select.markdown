@@ -32,6 +32,15 @@ to remove the configuration. All branches will be tested from then on.
 
 ###Skip branches or commits (opt-out)
 
+To exclude specific branches you can set the ***skip_ci_branches***
+config parameter on your project.
+
+    railsonfire config add
+    KEY:skip_ci_branches
+    VALUE: ignoredbranch
+
+From now on the branch ***ignoredbranch*** will be ignored.
+
 You can append ***--skip-ci*** to any branch to exclude it. For example
 if you name your branch ***old--skip-ci*** it will be ignored, but all
 other branches will still be tested.
